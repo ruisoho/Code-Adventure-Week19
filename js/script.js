@@ -74,12 +74,12 @@ document.getElementById("boolean-type").innerHTML = typeof myBoolean;
 
 
 // 5) Uncomment the array below, and print it the page and table.log() it to the console
-    const arr = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
     // 5a) Set the `innerHTML` of the `arrayElement` variable above equal to the `arr` variable
     // 5b) Use `console.table()` to log out the `arr` variable
     // 5c) Use a standard `for` loop to iterate over the `arr` variable
-      // 5ca) Inside the loop, concatenate the iterator, i, to the `innerHTML` of the `iterationIndexesElement`, like so: `iterationIndexesElement.innerHTML += i;`
+    // 5ca) Inside the loop, concatenate the iterator, i, to the `innerHTML` of the `iterationIndexesElement`, like so: `iterationIndexesElement.innerHTML += i;`
     // 5d) Take a moment to inspect the results on the page and especially in the console
+const arr = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];    
 console.table(arr);
 document.getElementById("array-element").innerHTML = arr;
 for(let i = 0; i < arr.length; i ++){
