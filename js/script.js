@@ -84,17 +84,22 @@ console.table(arr);
 document.getElementById("array-element").innerHTML = arr;
 for(let i = 0; i < arr.length; i ++){
     iterationIndexesElement.innerHTML += i;
-}
+};
 
 // 6) Print and log out a DOM element and DOM collection
     // 6a) Use `console.log()` to log out the `steps` variable
     // 6d) Use `console.log()` to log out `steps[0]` to get a look at the first item in the collection in the `steps` variable
     // 6d) Use `console.dir()` to log out `steps[0]` to get a look at the difference between `.log` and `.dir`
     // 6e) Take a moment to inspect the results in the console
-
+console.log(steps);
+console.log(steps[0]);
+console.dir(steps[0]);
 
 // 7) Print and log an `object` and one of its `method`s
     // 7a) Create a variable named windowObject and set it equal to the `this` keyword
     // 7c) Use `console.log()` to log out the `windowObject` variable
     // 7e) Use `console.log()` to log out `windowObject.document`
     // 7g) Take a moment to inspect the results in the console
+let windowObject = this;
+console.log(windowObject);
+console.log(windowObject.document);
