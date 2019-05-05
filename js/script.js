@@ -13,6 +13,7 @@
 const stringElement = document.querySelector('#string-element');
 const stringTypeElement = document.querySelector('#string-type');
 
+
 const numberElement = document.querySelector('#number-element');
 const numberTypeElement = document.querySelector('#number-type');
 
@@ -37,6 +38,11 @@ const steps = document.querySelectorAll('.step');
     // 2e) Set the `innerHTML` of the `stringTypeElement` variable above equal to the `mysStringType` variable
     // 2f) Take a moment to inspect the results on the page and especially in the console
     // NOTE: Comment out or delete log statements that you don't need any more to keep from overcrowding the console
+let myString = 'Treehouse';
+let myStringType = typeof myString;
+document.getElementById("string-element").innerHTML = myString;
+document.getElementById("string-type").innerHTML = typeof myStringType;
+
 
 
 // 3) Create a `myNumber` variable, log it to the console and print it to the screen
@@ -45,6 +51,12 @@ const steps = document.querySelectorAll('.step');
     // 3c) Use `console.log()` to log out the `myNumber` variable
     // 3d) Set the `innerHTML` of the `numberTypeElement` variable above equal to `typeof myNumber`
     // 3e) Take a moment to inspect the results on the page and especially in the console
+let myNumber = 3;
+document.getElementById("number-element").innerHTML = myNumber;
+console.log(myNumber)
+let myNumberType = typeof myNumber;
+document.getElementById("number-type").innerHTML = typeof myNumber;
+
 
 
 // 4) Create `myBoolean` variable, log it to the console and print it to the screen
@@ -55,16 +67,24 @@ const steps = document.querySelectorAll('.step');
     // 4e) Change the value of the `myBoolean` variable to the keyword `false` and refresh the page
     // 4f) Use `console.log()` to log out the `myBoolean` variable again to see the difference in the console
     // 4g) Take a moment to inspect the results on the page and especially in the console
+let myBoolean = false;
+document.getElementById("boolean-element").innerHTML = myBoolean;
+console.log(myBoolean);
+document.getElementById("boolean-type").innerHTML = typeof myBoolean;
 
 
 // 5) Uncomment the array below, and print it the page and table.log() it to the console
-    // const arr = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
+    const arr = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
     // 5a) Set the `innerHTML` of the `arrayElement` variable above equal to the `arr` variable
     // 5b) Use `console.table()` to log out the `arr` variable
     // 5c) Use a standard `for` loop to iterate over the `arr` variable
       // 5ca) Inside the loop, concatenate the iterator, i, to the `innerHTML` of the `iterationIndexesElement`, like so: `iterationIndexesElement.innerHTML += i;`
     // 5d) Take a moment to inspect the results on the page and especially in the console
-
+console.table(arr);
+document.getElementById("array-element").innerHTML = arr;
+for(let i = 0; i < arr.length; i ++){
+    iterationIndexesElement.innerHTML += i;
+}
 
 // 6) Print and log out a DOM element and DOM collection
     // 6a) Use `console.log()` to log out the `steps` variable
